@@ -1,0 +1,348 @@
+/***** BASE STYLES *****/
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #333333;
+}
+
+#about, #work, #contact {
+	height: 600px;
+}
+
+/***** GRID *****/
+
+.full-width {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.half-width {
+	width: 600px;
+	float: left;
+}
+
+.third-width {
+	width: 400px;
+	float: left;
+}
+
+/***** HEADER *****/
+
+header {
+	height: 820px;
+	background: url('../img/michael-on-couch.jpg') no-repeat 100%;
+	background-size: cover;
+	border-left: 6px solid #ebebeb;
+	border-right: 6px solid #ebebeb;
+	border-top: 6px solid #ebebeb;
+	margin-top: 0px;
+}
+
+header h1 {
+	padding: 0px 0px 0px 33px;
+
+}
+
+nav ul {
+	float: right;
+	padding: 45px 0px;
+	list-style: none;
+	text-align: center;
+	margin: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 0px;
+}
+
+nav ul li a {
+	text-transform: capitalize;
+	text-decoration: none;
+	font-size: 20px;
+	text-align: center;
+	color: #9c9897;
+	padding: 0px 30 0px 0;
+	margin: 0;
+	border-left: 1px solid #9c9897;
+	border-right: 1px solid #9c9897;
+	display: block;
+	height: 23px;
+}
+
+nav li strong {
+	font-weight: normal;
+	font-size: 20px;
+	text-transform: capitalize;
+	color: #5c94df;
+	border-left: 1px solid #9c9897;
+	border-right: 1px solid #9c9897;
+}
+
+header h2 {
+	width: 700px;
+	color: #9c9897;
+	font-family: 'Lora', serif;
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 0px 0px 0px 30px;	
+}
+
+header h3 {
+	width: 620px;
+	color: #5c94df;
+	font-family: 'Lora', serif;
+	font-size: 39px;
+	line-height: 45px;
+	font-weight: bold;
+	font-variant: small-caps;
+	letter-spacing: 1px;
+	margin: 0px;
+	padding: 8px 0px 10px 30px;
+}
+
+
+header h2 span {
+	color: #a56b43;
+	font-weight: bold;
+}
+
+.container {
+	width: 640px;
+	margin: 0;
+	display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);
+    padding: 0px 0px 0px 30px;
+
+    
+
+}
+
+.box-lg {
+	width: 540px;
+	height: 125px;
+	padding: 0px;
+	clear: both;	
+
+}
+
+.design-one {
+	background: white;
+	border: 1px solid #9c9897;
+	background-color: rgba(255, 255, 255, .65);
+
+}
+
+.design-one div {
+	float: left;
+	padding: 5px 0px 0px 5px;
+}
+
+
+.container > div > img {
+    width: 100%;
+    height: 90%;    
+    object-fit: cover;
+}	
+
+.vs-box img {
+	width: 120px;
+	height: 130px;
+	padding: 1px;
+}
+
+
+.mh-box img {
+	width: 120px;
+	height: 120px;
+	padding: 1px;
+}
+
+.mh-box a {
+	align-content: fill;
+}
+
+.oriannamilne-box img {
+	width: 270px;
+	height: 110px;
+	padding: 3px 0 0 3px;
+
+}
+
+
+/***** ABOUT *****/
+
+#about {
+	background-color: #ebebeb;
+}
+
+#about .full-width {
+	padding: 1px;	
+}
+
+#about h2 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 36px;
+	padding-left: 50px;
+}
+
+#about p {
+	font-size: 21px;
+	color: #7f7f7f;
+	line-height: 40px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+/***** WORK *****/
+
+#work {
+	background: #dfceb0;
+	text-align: center;
+}
+
+#work .full-width {
+	padding: 115px 0;
+}
+
+#work img {
+	padding-bottom: 30px;
+}
+
+#work h3 {
+	font-size: 23px;
+	line-height: 32px;
+	width: 205px;
+	margin: 0 auto;
+}
+
+#work p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	line-height: 30px;
+	padding: 0 48px;
+}
+
+/***** CONTACT *****/
+
+#contact {
+	background: #ebebeb;
+}
+
+#contact .full-width {
+	padding: 110px 0;
+}
+
+#contact img#contact-img {
+	margin-left: 0px;
+	border: 12px solid #ffffff;
+}
+
+#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
+    padding-left: 145px;
+}
+
+#contact #envelope {
+    padding: 0 10px 0 145px;
+}
+
+#contact h2 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 36px;
+	line-height: 44px;
+}
+
+#contact #email-header {
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 44px;
+	margin: 0px 0 40px 0;
+}
+
+#contact #socialmedia-header {
+	font-weight: bold;
+	font-size: 29px;
+	line-height: 44px;
+	margin: 40px 0 0 0;
+}
+
+#contact a {
+	text-decoration: none;
+	color: #c49075;
+	font-weight: bold;
+	font-size: 28px;
+}
+
+#contact ul {
+    list-style: none;
+}
+
+#contact ul li {
+     display: inline-block;
+     padding-top: 40px;
+}
+
+#contact ul img {
+    font-size: 32px;
+    padding-right: 48px;
+
+}
+
+.emphasis {
+	font-size: 41px;
+	font-variant: small-caps;
+	color: #5c94df;
+}
+
+
+
+/***** LINK *****/
+
+a:hover {
+	color: #5c94df;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+#work-page {
+	background: #dfceb0;
+	text-align: center;
+}
+
+#work-page .full-width {
+	padding: 115px 0;
+}
+
+#work-page img {
+	padding-bottom: 30px;
+}
+
+#work-page h3 {
+	font-size: 23px;
+	line-height: 32px;
+	width: 205px;
+	margin: 0 auto;
+}
+
+#work p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	line-height: 30px;
+	padding: 0 48px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
